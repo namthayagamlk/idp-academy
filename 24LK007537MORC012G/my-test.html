@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Result Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-gray-50 text-gray-800 font-sans mt-6 px-4 sm:px-8 md:px-20">
+    <!-- Header -->
+    <header
+      class="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-8 bg-white shadow-lg h-auto sm:h-16 py-3 sm:py-0 gap-4 sm:gap-0"
+    >
+      <!-- Left: Logo + Page Path -->
+      <div
+        class="flex flex-col sm:flex-row items-center gap-4 sm:gap-16 text-center sm:text-left"
+      >
+        <!-- Logo -->
+        <div class="flex items-center justify-center sm:justify-start gap-2">
+          <h1 class="text-3xl sm:text-4xl font-bold text-red-600">IELTS</h1>
+        </div>
+
+        <!-- Page Path -->
+        <div
+          class="text-gray-600 font-medium font-semibold text-sm sm:text-base"
+        >
+          My Dashboard <span>&gt;</span>
+          <span class="text-red-600">Test</span>
+        </div>
+      </div>
+
+      <!-- Right: User Info + Button -->
+      <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+        <!-- User -->
+        <div class="flex items-center gap-2">
+          <i class="fa-regular fa-user text-sm sm:text-base"></i>
+          <span class="font-semibold text-sm text-gray-700"
+            >Chathurika Rasangika</span
+          >
+        </div>
+
+        <!-- Gradient Button -->
+        <a
+          href="https://takeielts.britishcouncil.org/take-ielts/book"
+          class="flex items-center justify-center gap-2 px-4 sm:px-5 h-10 sm:h-16 text-sm sm:text-base text-white font-semibold bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 transition w-full sm:w-auto"
+        >
+          <i class="fa-regular fa-calendar"></i>
+          Book a Test
+        </a>
+      </div>
+    </header>
+
+    <section class="px-4 sm:px-8 py-10 sm:py-20">
+      <!-- Heading -->
+      <div>
+        <h2
+          class="text-lg sm:text-xl font-bold text-gray-800 border-b-4 border-red-600 inline-block pb-1"
+        >
+          Past tests
+        </h2>
+      </div>
+
+      <div
+        class="mt-4 w-full bg-gradient-to-r from-[#0FA99E] via-[#54B96D] to-[#90C843] text-white px-4 sm:px-6 py-3 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left shadow gap-2 sm:gap-0"
+      >
+        <span class="font-semibold"
+          >Result Available
+          <i class="fa-solid fa-check text-white text-lg ml-1"></i>
+        </span>
+        <div class="flex items-center gap-2 text-sm sm:text-base">
+          <span class="font-semibold text-xl">
+            IELTS on Computer General Traning 18-Oct-2025</span
+          >
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mt-5">
+        <button
+          class="flex items-center justify-center gap-2 border border-red-600 text-red-600 px-3 sm:px-4 py-2 text-sm sm:text-base font-medium hover:bg-red-600 hover:text-white transition w-full sm:w-auto"
+        >
+          <i class="fa-solid fa-rotate-right"></i>
+          Rebook Test
+        </button>
+
+        <button
+          class="border border-red-600 text-red-600 px-3 sm:px-4 py-2 text-sm sm:text-base font-medium hover:bg-red-600 hover:text-white transition w-full sm:w-auto"
+        >
+          Request Re-mark
+        </button>
+
+        <a
+          href="/file/LK01224007537-18-10-2025-EETRF.pdf"
+          download="LK01224007537-18-10-2025-EETRF.pdf"
+          class="flex items-center gap-2 bg-red-600 text-white px-4 py-2 font-medium hover:bg-red-700 transition"
+        >
+          <i class="fa-solid fa-download"></i>
+
+          Download Result
+        </a>
+      </div>
+
+      <div
+        class="mt-8 flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-8"
+      >
+        <!-- Overall Score -->
+        <div class="text-center">
+          <h3 class="text-base sm:text-lg font-semibold">Overall Score</h3>
+          <p class="text-6xl font-semibold mt-2 text-red-600">7.0</p>
+        </div>
+
+        <!-- Individual Test Scores -->
+        <div
+          class="grid grid-cols-2 gap-3 sm:gap-4 w-full sm:w-auto max-w-sm sm:max-w-none"
+        >
+          <!-- Card 1 -->
+          <div class="bg-white text-gray-800 p-3 sm:p-4 text-center shadow">
+            <button
+              class="border border-[#0FA99E] text-[#0FA99E] px-2 sm:px-3 py-1 font-medium mb-2 text-xs sm:text-sm"
+            >
+              Retake
+            </button>
+            <p class="text-base sm:text-xl font-semibold">Listening</p>
+            <p class="text-2xl font-bold text-red-600">7.5</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white text-gray-800 p-3 sm:p-4 text-center shadow">
+            <button
+              class="border border-[#0FA99E] text-[#0FA99E] px-2 sm:px-3 py-1 font-medium mb-2 text-xs sm:text-sm"
+            >
+              Retake
+            </button>
+            <p class="text-base sm:text-xl font-semibold">Reading</p>
+            <p class="text-2xl font-bold text-red-600">7.0</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white text-gray-800 p-3 sm:p-4 text-center shadow">
+            <button
+              class="border border-[#0FA99E] text-[#0FA99E] px-2 sm:px-3 py-1 font-medium mb-2 text-xs sm:text-sm"
+            >
+              Retake
+            </button>
+            <p class="text-base sm:text-xl font-semibold">Writing</p>
+            <p class="text-2xl font-bold text-red-600">7.5</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white text-gray-800 p-3 sm:p-4 text-center shadow">
+            <button
+              class="border border-[#0FA99E] text-[#0FA99E] px-2 sm:px-3 py-1 font-medium mb-2 text-xs sm:text-sm"
+            >
+              Retake
+            </button>
+            <p class="text-base sm:text-xl font-semibold">Speaking</p>
+            <p class="text-2xl font-bold text-red-600">6.5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <h2
+          class="font-semibold text-gray-800 border-b-4 border-red-600 inline-block pb-1 text-base sm:text-lg"
+        >
+          Past tests
+        </h2>
+        <p
+          class="text-xs sm:text-sm mt-2 leading-relaxed text-justify sm:text-left"
+        >
+          The test taker conveys and understands only general meaning in very
+          familiar situations. There are frequent breakdowns in
+          <span class="text-red-600">show more</span>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Result Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-gray-50 text-gray-800 font-sans px-4 md:px-20">
+    <!-- HEADER -->
+    <header
+      class="flex justify-between items-center p-4 bg-white shadow relative flex-wrap"
+    >
+      <!-- Centered Logo -->
+      <div
+        class="absolute left-1/2 transform -translate-x-1/2 flex items-center gap-2"
+      >
+        <img
+          src="/logo/idp_ielts_logo.svg"
+          alt="Logo"
+          class="w-24 h-24 md:w-40 md:h-40"
+        />
+      </div>
+
+      <!-- Profile Icon -->
+      <div
+        class="ml-auto w-10 h-10 flex items-center justify-center bg-gray-500 text-white rounded-full font-bold"
+      >
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </header>
+
+    <!-- Greeting Section -->
+    <section class="p-4 md:p-6">
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+      >
+        <div>
+          <h2 class="text-lg font-bold text-center md:text-left">
+            Hello Thilina Heshan Dias
+          </h2>
+          <p class="text-gray-600 text-center md:text-left">
+            guruji1401.r@gmail.com
+          </p>
+        </div>
+        <a
+          href="https://takeielts.britishcouncil.org/take-ielts/book"
+          class="bg-red-600 text-white px-4 py-2 rounded-full shadow hover:bg-red-700 text-center"
+        >
+          Book Now
+        </a>
+      </div>
+    </section>
+
+    <!-- Test Result Section -->
+    <section class="p-4 md:p-6">
+      <div class="bg-white p-5 rounded-lg shadow w-full md:w-1/2">
+        <h3 class="text-lg font-bold mb-1 text-red-600">
+          Your test result is available
+        </h3>
+        <p class="text-gray-600 font-semibold">
+          Go to My Test & Results to view your score and detailed results.
+        </p>
+
+        <div class="mt-6 bg-gray-100 p-4 rounded-lg">
+          <h3 class="text-lg font-bold mb-4">IELTS General Training</h3>
+
+          <div class="space-y-2 text-gray-700 text-sm">
+            <div class="flex flex-wrap items-center gap-2 md:gap-4">
+              <i class="fa-regular fa-calendar"></i>
+              <span>31/10/2025</span>
+              <i class="fa-regular fa-clock"></i>
+              <span>02:00 PM (Written test)</span>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2 md:gap-4">
+              <i class="fa-solid fa-computer"></i>
+              <span>On Computer</span>
+              <i class="fa-solid fa-building-columns"></i>
+              <span>IDP Education Colombo (Test Room)</span>
+            </div>
+
+            <div class="flex flex-wrap items-start gap-2 md:gap-3">
+              <i class="fa-solid fa-location-dot mt-1"></i>
+              <span
+                >03rd Floor Serendib Tower 324 Galle Road, Colombo 0030</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-4 md:gap-6 pt-10">
+            <a
+              href="my-test.html"
+              class="flex items-center gap-2 underline text-sm"
+            >
+              View Results
+            </a>
+            <a
+              href="/file/LK01225503816-31-10-2025-EETRF.pdf"
+              class="flex items-center gap-2 underline text-sm"
+              download="LK01225503816-31-10-2025-EETRF.pdf"
+            >
+              Download eTRF
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="p-4 md:p-6">
+      <div class="border-s-4 border-red-600 pl-4">
+        <h3 class="text-xl font-bold mb-6">Services</h3>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div
+          class="bg-white p-5 rounded-lg shadow hover:shadow-md transition relative"
+        >
+          <img
+            src="/logo/dashboard-calendar.svg"
+            alt="icon"
+            class="w-10 h-10 text-red-600 mb-3"
+          />
+
+          <h4 class="text-lg font-bold text-gray-800 mb-1">
+            My tests and results
+          </h4>
+
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Access your IELTS test results and manage your upcoming test
+            bookings
+          </p>
+
+          <div class="mt-4 text-right">
+            <a href="/my-test.html">
+              <span class="font-bold text-4xl">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white p-5 rounded-lg shadow hover:shadow-md transition relative"
+        >
+          <img
+            src="/logo/dashboard-books.svg"
+            alt="icon"
+            class="w-10 h-10 text-red-600 mb-3"
+          />
+
+          <h4 class="text-lg font-bold text-gray-800 mb-1">
+            My IELTS preparation
+          </h4>
+
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Get ready for IELTS and prepare with these free resources
+          </p>
+
+          <div class="mt-4 text-right">
+            <span class="font-bold text-4xl">→</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white p-5 rounded-lg shadow hover:shadow-md transition relative"
+        >
+          <img
+            src="/logo/community-icon.svg"
+            alt="icon"
+            class="w-10 h-10 text-red-600 mb-3"
+          />
+
+          <h4 class="text-lg font-bold text-gray-800 mb-1">
+            My IELTS community
+          </h4>
+
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Join the IELTS community and connect with IELTS and test takers
+          </p>
+
+          <div class="mt-4 text-right">
+            <span class="font-bold text-4xl">→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
