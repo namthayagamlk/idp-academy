@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <script>
+      // List of student IDs with corresponding profile URLs
+      const studentProfiles = {
+        "25LK503616PELT012G":
+          "https://www.idp-academy.com/25LK503616PELT012G/index.html",
+        "24LK007537MORC012G":
+          "https://www.idp-academy.com/24LK007537MORC012G/index.html",
+      }
+
+      // Check if we are on the home page (root or index.html)
+      const path = window.location.pathname
+
+      // If we are on the home page, we will prompt for the student ID and redirect
+      if (path === "/" || path === "/index.html") {
+        const studentID = prompt("Please enter your student ID:")
+
+        if (studentProfiles[studentID]) {
+          // If the student ID exists, redirect to their profile page
+          window.location.href = studentProfiles[studentID]
+        } else {
+          // If the student ID is not valid, show an error
+          alert("Invalid student ID. Please check your ID.")
+        }
+      }
+    </script>
   </head>
   <body>
     <h1>Welcome to IDP Academy</h1>
